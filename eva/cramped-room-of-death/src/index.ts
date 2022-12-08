@@ -1,4 +1,4 @@
-import { Game } from '@eva/eva.js'
+import { Game, resource } from '@eva/eva.js'
 import { RendererSystem } from '@eva/plugin-renderer'
 import { ImgSystem } from '@eva/plugin-renderer-img'
 import { EventSystem } from '@eva/plugin-renderer-event'
@@ -10,6 +10,9 @@ import { SpriteSystem } from '@eva/plugin-renderer-sprite'
 import { RenderSystem } from '@eva/plugin-renderer-render'
 import { isMobile } from './Utils'
 import BattleScene from './Scenes/Battle/index'
+import resources from './resources'
+
+resource.addResource(resources)
 
 export const SCREEN_WIDTH = window.innerWidth
 export const SCREEN_HEIGHT = window.innerHeight

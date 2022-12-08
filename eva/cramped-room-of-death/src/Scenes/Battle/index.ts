@@ -1,6 +1,7 @@
 import { Scene } from '@eva/eva.js'
 import BackgroundColor from './GameObjects/BackgroundColor'
 import Footer from './GameObjects/Footer'
+import Controller from './GameObjects/Controller'
 import { SCREEN_HEIGHT, SCREEN_WIDTH } from '../../index'
 
 const BattleScene = () => {
@@ -16,6 +17,9 @@ const BattleScene = () => {
 
   // 2. 底部 footer
   scene.addChild(Footer())
+
+  // 3. 控制按钮
+  scene.addChild(Controller())
 
   return scene
 }
