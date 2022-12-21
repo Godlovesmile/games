@@ -1,4 +1,4 @@
-import { TILE_TYPE_ENUM } from 'src/Enums'
+import { TILE_TYPE_ENUM } from '../Enums'
 import level1 from './level1'
 
 export interface ITitle {
@@ -10,7 +10,7 @@ export interface ILevel {
   mapInfo: Array<Array<ITitle>>
 }
 
-const levels = {
+const levels: Record<string, ILevel> = {
   level1,
 }
 

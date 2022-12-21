@@ -1,4 +1,4 @@
-import { TILE_TYPE_ENUM } from 'src/Enums'
+import { TILE_TYPE_ENUM } from '../Enums'
 import { ILevel } from './index'
 
 const mapInfo = [
