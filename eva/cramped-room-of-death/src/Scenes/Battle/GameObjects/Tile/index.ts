@@ -1,8 +1,8 @@
 import { Sprite } from '@eva/plugin-renderer-sprite'
 import { GameObject } from '@eva/eva.js'
 
-const TILE_WIDTH = 32
-const TILE_HEIGHT = 32
+export const TILE_WIDTH = 32
+export const TILE_HEIGHT = 32
 
 const Tile = (imgSrc: string, i: number, j: number) => {
   const tile = new GameObject('tile', {

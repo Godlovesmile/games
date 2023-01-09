@@ -15,3 +15,4 @@ const levels: Record<string, ILevel> = {
 }
 
 export default levels
+export { ITitle }

@@ -1,5 +1,5 @@
 import { Component } from '@eva/eva.js'
-import levels from '../../../../Levels'
+import DataManagerInstance from '../../../../Runtime/DataManager'
 import Tile from '../Tile'
 
 class TileManager extends Component {
@@ -10,9 +10,7 @@ class TileManager extends Component {
   }
 
   initTile() {
-    const {
-      level1: { mapInfo },
-    } = levels
+    const { mapInfo } = DataManagerInstance
 
     for (let i = 0; i < mapInfo.length; i++) {
       const column = mapInfo[i]
